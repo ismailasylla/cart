@@ -1,4 +1,4 @@
-<?php
+ <?php
 
 /*
 |--------------------------------------------------------------------------
@@ -11,6 +11,12 @@
 |
 */
 
-Route::get('/shop', function () {
-    return view('shop.index');
-});
+Route::get('/shop', [
+
+    'uses' => 'ProductController@getIndex',
+    'as' => 'product.index'
+
+
+]);
+
+
