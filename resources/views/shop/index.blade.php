@@ -14,7 +14,7 @@
 
     <h1>Shop</h1>
 
-         @foreach($products->chunk(3)  as $productChunk )
+         @foreach($products->chunk(3) as $productChunk )
 
              <div class="row">
 
@@ -35,17 +35,7 @@
                      </div>
 
                  @endforeach
-
-
              </div>
-
-
          @endforeach
-
-
-
-
-
-
 
     @endsection
