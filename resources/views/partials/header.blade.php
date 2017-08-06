@@ -28,7 +28,7 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user" aria-hidden="true"></i> User Management <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="{{route('user.signup')}}">Signup</a></li>
-                        <li><a href="">Signin</a></li>
+                        <li><a href="{{route('user.signin')}}">Signin</a></li>
                         <li role="separator" class="divider"></li>
                         <li><a href="#">Logout</a></li>
                     </ul>
