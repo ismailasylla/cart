@@ -37,7 +37,7 @@ Route::get('/', [
  Route::get('/signin',[
 
      'uses'=> 'UserController@getSignin',
-     'as'=> 'user.signup'
+     'as'=> 'user.signin'
 
  ]);
 
@@ -47,6 +47,8 @@ Route::get('/', [
      'as'=> 'user.signin'
 
  ]);
+
+
 
 
 
