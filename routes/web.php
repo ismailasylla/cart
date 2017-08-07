@@ -28,6 +28,16 @@ Route::get('/add-to-cart/{id}', [
 
 
 
+ Route::get('/shopping-cart', [
+
+     'uses' => 'productController@getCart',
+     'as' => 'product.shoppingCart'
+
+
+ ]);
+
+
+
  Route::group(['prefix' => 'user'], function(){
 
      Route::group(['middleware' => 'guest'], function(){

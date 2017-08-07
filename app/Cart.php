@@ -11,7 +11,7 @@ class Cart
     public $totalPrice =0;
 
 
-    public function __constructor ($oldCart)
+    public function __construct ($oldCart)
     {
 
         if ($oldCart) {
