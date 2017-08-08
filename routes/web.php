@@ -14,7 +14,6 @@
 Route::get('/', [
     'uses' => 'ProductController@getIndex',
     'as' => 'product.index'
-
 ]);
 
 
@@ -22,8 +21,6 @@ Route::get('/add-to-cart/{id}', [
 
     'uses' => 'productController@getAddToCart',
     'as' => 'product.addToCart'
-
-
 ]);
 
 
@@ -32,8 +29,6 @@ Route::get('/add-to-cart/{id}', [
 
      'uses' => 'productController@getCart',
      'as' => 'product.shoppingCart'
-
-
  ]);
 
 
@@ -41,13 +36,11 @@ Route::get('/add-to-cart/{id}', [
 
     'uses' => 'ProductController@getCheckout',
      'as' => 'checkout'
-
  ]);
 
  Route::post('/checkout', [
     'uses' => 'ProductController@postCheckout',
      'as' => 'checkout'
-
  ]);
 
 
@@ -62,7 +55,6 @@ Route::get('/add-to-cart/{id}', [
 
              'uses'=> 'UserController@getSignup',
              'as'=> 'user.signup'
-
          ]);
 
 
@@ -85,7 +77,6 @@ Route::get('/add-to-cart/{id}', [
 
              'uses'=> 'UserController@postSignin',
              'as'=> 'user.signin'
-
          ]);
 
 
@@ -98,26 +89,15 @@ Route::get('/add-to-cart/{id}', [
 
              'uses'=>'UserController@getProfile',
              'as' => 'user.profile'
-
          ]);
 
          Route::get('/logout',[
 
              'uses' => 'UserController@getLogout',
              'as' => 'user.logout'
-
          ]);
 
-
-
-
      });
-
-
-
-
-
-
 
  });
 
